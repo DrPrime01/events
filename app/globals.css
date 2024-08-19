@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BR-Firma";
+  src: url("/br-firma-cufonfonts/BRFirmaBlack.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "BR-Firma", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.noScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+.noScrollBar::-webkit-scrollbar-thumb {
+  display: none;
+}
